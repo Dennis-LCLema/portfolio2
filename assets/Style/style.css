@@ -1,0 +1,138 @@
+.jumbotron{
+    min-height: 768px;
+  }
+  
+  .name{
+    color:white !important;
+    font-size:100px !important;
+    margin-top:100px;
+  }
+  
+  
+  .description {
+    color:white !important;
+    border:none !important;
+    height:468px;
+    font-size:24px !important;
+     
+  }
+  
+  body, html {
+      height: 100%;
+   }
+  
+  footer {
+    min-height:50px;
+    background-color:brown !important;
+  }
+  
+  .parallax2{
+      /* The image used */
+      background-image: url(https://lh3.googleusercontent.com/-ghVE-hqDkQY/V8RNQiBy7GI/AAAAAAAAAIQ/o9BfxyH5VgMdLJ8hMNx1hWPKIbzyT3GZACJoC/w1024-h763/photo-1440330033336-7dcff4630cef.jpeg);
+  
+      /* Set a specific height */
+      min-height: 768px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  
+  
+  
+  .parallax1{
+      /* The image used */
+      background-image: url("https://wallpaperscraft.com/image/zenit_retro_camera_photos_map_107245_3840x2160.jpg");
+  
+      /* Set a specific height */
+      min-height: 768px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .parallax3{
+      /* The image used */
+      background-image: url("https://4.bp.blogspot.com/-TScg-aTh6m8/UyXv8R-wa8I/AAAAAAAAA6w/lIYNTOTQhxM/s1600/okkk.jpg");
+  
+      /* Set a specific height */
+      min-height: 700px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  
+  
+  
+  .navbar {
+      margin-bottom: 0;
+      background-color: transparent !important;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+  }
+  
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  
+  a:hover {
+      color: #f4511e !important;
+      background-color: #fff !important;
+      opacity: 0.5;
+  }
+  
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  
+  .appDiv{
+    text-align: justify;
+    text-align: center;
+    color: white;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px black;
+    border: 1px solid rgb(245, 240, 240);
+    margin: 5%;
+}
+
+img:hover{
+    transform: scale(1.15);
+}
+
+.appDiv{
+    width: 400px;
+    overflow: hidden;
+    margin: 5%;
+    
+
+
+}
+
+#apps{
+    display: flex;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/Style/style.css">
+    <link rel="stylesheet" href="assets/Javascript/app.js">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+  </head>
+  
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <div class="navbar-brand">DENNIS CAMPOVERDE-LEMA</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ 
+    <div id="about" class="parallax2 container-fluid">
+      <h1 id="box1" class="text-left name">About</h1>
+      <p class="col-sm-5 description">Hello world! My name is Dennis Campoverde-Lema.  
+        I am a professional full stack web, and software developer. I have backgrounds 
+        in both front end and back end development.   I have considerably experience with HTML, 
+        CSS, JavaScript, Node.js, Java, and React.  Likewise, I have experience with server-side 
+        like MySQL, Mango DB, Mongoose, and Firebase.  I am a very energetic developer that brings 
+        consistency and proficiency to my work.  Feel free to contact me.   </p>
+    </div>
+
+    <div id="portfolio" class="parallax1 container-fluid">
+      <h1 id="box2" class="text-left name">Portfolio</h1>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="appDiv">
+                <a href="https://dennis-lclema.github.io/Train-Schedule/"><img src="assets/Images/Train.png" alt=""></a>
+                <h1>Train Schedule</h1>
+                <p>This project the user will input a time and train company and it will save the information on the webpages.  
+                  I used HTML, CSS, Java Script, and jQuery to set it up.  I used HTML and CSS to set up input searches and background design.  
+                  I used Java Script and jQuery to display responses and to let the user know if they put the right information in.  
+                  I used firebase to save the user input and to display the information the user input.  
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="appDiv">
+      
+                <a href="https://dennis-lclema.github.io/GifTastic/"><img src="assets/Images/gif.png" alt=""></a>
+                <h1>GifTastic</h1>
+                <p> This application allows the user to input a movie title and a Gif from the movie will pop. 
+                  The user can also pause and play Gif just by clicking on it.  I used HTML and CSS to set up the design of the application.  
+                  I used JAVA and jQuery for most of the responses and function.  I used the gif API from https://giphy.com/.  
+                  I used a jQuery function AJAX to pull in the information necessary for the application to work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="appDiv">
+                <a href="https://dennis-lclema.github.io/GroupProject/"><img src="assets/Images/app.png" alt=""></a>
+                <h1>Events APP</h1>
+                <p>Eventide is an app that allows user to find event near their location and to find restaurants near the event. 
+                  How it works: Input your city and date, and events will populate below. Click on the event link to buy tickets and get additional information. 
+                  Click the Nearby Restaurants button to show restaurants close by. Click on the link to check out the menu or book a reservation.  
+                  Using HTML and CSS to design the back ground and search boxes.  Used two API’s seekgeek, and Zamato. I used jQuery function AJAX to pull in information from the API.  
+                  Also used firebase to save user review on the app.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="appDiv">
+                <a href="https://dennis-lclema.github.io/Trivia-Game/"><img src="assets/Images/Quiz.png" alt=""></a>
+                <h1>Trivia-Game</h1>
+                <p>This application tests timer on web application.  The application tells you a set of question and you have to answer within 15 seconds.  
+                  I used HTML and CSS to design the application.  Java script was used mostly for question and the timer.  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="appDiv">
+                <a href="https://dennis-lclema.github.io/Psychic-Game/"><img src="assets/Images/quess.png" alt=""></a>
+                <h1>Psychic-Game</h1>
+                <p>This is one of my earlier game projects using JAVA to randomize a letter and user has to quests which letter it is using their keyboards.  
+                  I used HTML and CSS to design this application.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="appDiv">
+                <a href="https://dennis-lclema.github.io/unit-4-game/"><img src="assets/Images/reapers.png" alt=""></a>
+                <h1>Game</h1>
+                <p>This project is a game using Java script.  User are given four buttons (characters) and the enemy number (total; number needed to defeat enemy).  
+                  User will have to click on the buttons and are given a random number amount between 12-1 and each button will add on.  
+                  The user need to match the enemy number without going over.  
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        </div>  
+    <div id="contact" class="parallax3 container-fluid">
+  <h2 id="box3" class="text-left name">Contact</h2>
+    <p>&nbsp;</p>
+    <p></p>
+          <p>&nbsp;</p>
+    <p></p>
+          <p>&nbsp;</p>
+    <p></p>
+  <div class="row">
+    <div class=" col-sm-6">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text"  style="opacity:0.6" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" style="opacity:0.6"  required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" style="opacity:0.6" ></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-block pull-right" type="submit" style="background-color:white">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+  
+    <footer id="footer" class="container-fluid text-center">
+    <a href="https://www.linkedin.com/in/dennis-campoverde-lema-b740a1178/" target="_blank"><i class="col-xs-1 fa fa-linkedin" style="font-size:24px;color:white; margin-top:15px"></i></a>
+      
+     <a href="https://www.twitter.com/" target="_blank"><i class="col-xs-1 fa fa-twitter" style="font-size:24px;color:white; margin-top:15px"></i></a>
+  </footer>
+
+</body>
+</html>
